@@ -8,7 +8,8 @@ import design
 
 
 #python -m venv venv
-#./source bin/venv/activate
+#source venv/bin/activate
+#cd pythonProject3
 #pip install -r requirements.txt
 
 class App(QtWidgets.QMainWindow, design.Ui_MainWindow):
