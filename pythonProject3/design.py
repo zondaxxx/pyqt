@@ -54,7 +54,7 @@ class Ui_MainWindow(object):
         self.verticalLayout.addWidget(self.tabWidget)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 880, 29))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 880, 27))
         self.menubar.setObjectName("menubar")
         self.menu = QtWidgets.QMenu(self.menubar)
         self.menu.setObjectName("menu")
@@ -72,11 +72,14 @@ class Ui_MainWindow(object):
         self.open_product.setObjectName("open_product")
         self.open_dvig = QtWidgets.QAction(MainWindow)
         self.open_dvig.setObjectName("open_dvig")
+        self.save_magaz = QtWidgets.QAction(MainWindow)
+        self.save_magaz.setObjectName("save_magaz")
         self.menu.addAction(self.open_magaz)
+        self.menu.addAction(self.save_magaz)
         self.menubar.addAction(self.menu.menuAction())
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -91,3 +94,4 @@ class Ui_MainWindow(object):
         self.sohranit.setText(_translate("MainWindow", "Сохранить"))
         self.open_product.setText(_translate("MainWindow", "Открыть товары"))
         self.open_dvig.setText(_translate("MainWindow", "Открыть движение товаров"))
+        self.save_magaz.setText(_translate("MainWindow", "Сохранить"))

@@ -60,7 +60,7 @@
      <x>0</x>
      <y>0</y>
      <width>880</width>
-     <height>29</height>
+     <height>27</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -68,6 +68,7 @@
      <string>Файл</string>
     </property>
     <addaction name="open_magaz"/>
+    <addaction name="save_magaz"/>
    </widget>
    <addaction name="menu"/>
   </widget>
@@ -95,6 +96,11 @@
   <action name="open_dvig">
    <property name="text">
     <string>Открыть движение товаров</string>
+   </property>
+  </action>
+  <action name="save_magaz">
+   <property name="text">
+    <string>Сохранить</string>
    </property>
   </action>
  </widget>
