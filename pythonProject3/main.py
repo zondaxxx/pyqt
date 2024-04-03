@@ -7,6 +7,10 @@ from PyQt5.QtWidgets import QFileDialog, QTableWidgetItem
 import design
 
 
+#python -m venv venv
+#./source bin/venv/activate
+#pip install -r requirements.txt
+
 class App(QtWidgets.QMainWindow, design.Ui_MainWindow):
 
     def __init__(self):
